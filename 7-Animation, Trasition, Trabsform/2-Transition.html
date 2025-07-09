@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .psedo{
+            height: 25px;
+            width: 150px;
+            background-color: rgb(226, 186, 193);
+            border: 2px solid black;
+            border-radius: 1px;
+
+             transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;  /*step, linear, steps(6, end); cubic-bezier(0.29, 1.01, 1, -0.68); */
+            transition-delay: 0.0s; 
+
+            /* transition: all 0.5 ease-in-out 0.5; */
+        }
+        .psedo:hover{
+            height: 30px;
+            width: 160px;
+            background-color: rgb(131, 131, 184);
+            border-radius: 150px;
+        }
+        .psedo:active{
+            height: 30px;
+            width: 160px;
+            background-color: rgb(162, 162, 162);
+            border-radius: 150px;
+        }
+    </style>
+</head>
+<body>
+    <button class="psedo">Learning Psedo</button>
+</body>
+</html>
